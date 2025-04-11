@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conference Schedule</title>
   <style>
+
+    html {
+      background: #ebebeb;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       max-width: 1200px;
@@ -55,9 +60,11 @@
     .event {
       border: 1px solid #ddd;
       border-radius: 4px;
-      padding: 10px;
+      padding: 19px;
       margin-bottom: 15px;
       position: relative;
+      background: white;
+      box-shadow: 3px 3px 5px #a39e9e;
     }
     
     .event-time {
@@ -124,6 +131,28 @@
         page-break-before: avoid;
       }
     }
+
+    .legend-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 1em;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      margin-right: 6px;
+      border: 1px solid #ccc;
+    }
+
   </style>
 </head>
 <body>
@@ -131,6 +160,7 @@
   <div id="schedule-container" style="display: none;">
     <h1 id="conference-title"></h1>
     <div class="date-info" id="conference-dates"></div>
+    <div id="legend" class="legend-container">Legend container here:</div>
     
     <div id="days-container"></div>
   </div>
@@ -158,6 +188,10 @@
     });
 
     function renderSchedule(data) {
+
+      // create legend data heading
+      renderLegend(data.schedule.conference.tracks, 'legend');
+
       // Access the conference data
       const conference = data.schedule.conference;
       const primaryColor = conference.colors.primary;
@@ -339,6 +373,30 @@
 
       return parts.join(' ');
     }
+
+    function renderLegend(tracks, containerId) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = ''; // Clear anything existing
+
+      tracks.forEach(track => {
+        const item = document.createElement('div');
+        item.className = 'legend-item';
+
+        const colorBox = document.createElement('div');
+        colorBox.className = 'legend-color';
+        colorBox.style.backgroundColor = track.color;
+
+        const label = document.createElement('span');
+        label.textContent = track.name;
+
+        item.appendChild(colorBox);
+        item.appendChild(label);
+        container.appendChild(item);
+      });
+
+
+}
+
 
   </script>
 </body>
