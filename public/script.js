@@ -116,9 +116,10 @@ document.addEventListener('DOMContentLoaded', function() {
               typeDiv.className = 'event-type';
               typeDiv.textContent = `${event.track || ''} ${event.type}`.trim();
 
-            if (event.type == "Workshop")
+            // many event tracks have the word "Talk" in them, and "Talk" is also in the type
+            // this helps de-duplicate the type and track
+            if (event.type.includes(event.track))
             {
-              // Workshops have both type and track set to the same
               typeDiv.textContent = event.type; 
             }
 
