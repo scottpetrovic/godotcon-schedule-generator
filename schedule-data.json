@@ -1,0 +1,982 @@
+{
+    "$schema": "https://c3voc.de/schedule/schema.json",
+    "generator": {
+      "name": "pretalx",
+      "version": "2024.1.0"
+    },
+    "schedule": {
+      "url": "https://talks.godotengine.org/godotcon-us-2025/schedule/",
+      "version": "0.1",
+      "base_url": "https://talks.godotengine.org",
+      "conference": {
+        "acronym": "godotcon-us-2025",
+        "title": "GodotCon Boston 2025",
+        "start": "2025-05-05",
+        "end": "2025-05-07",
+        "daysCount": 3,
+        "timeslot_duration": "00:05",
+        "time_zone_name": "EST5EDT",
+        "colors": {
+          "primary": "#478CBF"
+        },
+        "rooms": [
+          {
+            "name": "Large Room",
+            "guid": "bd09e6be-ca66-505f-98c0-17760f59622f",
+            "description": null,
+            "capacity": 150
+          },
+          {
+            "name": "Small Room",
+            "guid": "bd43d648-94eb-5d9c-abd5-61fe99d72573",
+            "description": null,
+            "capacity": 100
+          }
+        ],
+        "tracks": [
+          {
+            "name": "Talk",
+            "color": "#1157A5"
+          },
+          {
+            "name": "Workshop",
+            "color": "#0F5900"
+          },
+          {
+            "name": "Sponsored",
+            "color": "#98005B"
+          },
+          {
+            "name": "Godot Update",
+            "color": "#DB0000"
+          }
+        ],
+        "days": [
+          {
+            "index": 1,
+            "date": "2025-05-05",
+            "day_start": "2025-05-05T04:00:00-04:00",
+            "day_end": "2025-05-06T03:59:00-04:00",
+            "rooms": {
+              "Large Room": [
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/9S7E3J/",
+                  "id": 125,
+                  "guid": "bfa6fe7f-e8ce-5bbc-9c83-bff6c28f4939",
+                  "date": "2025-05-05T09:00:00-04:00",
+                  "start": "09:00",
+                  "logo": null,
+                  "duration": "02:15",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-125-markov-chain-with-a-shotgun-open-language-models-in-godot",
+                  "title": "Markov Chain with a Shotgun: Open Language Models in Godot",
+                  "subtitle": "",
+                  "track": "Workshop",
+                  "type": "Workshop",
+                  "language": "en",
+                  "abstract": "This workshop will teach participants how to reliably use small and open language models as components in larger procedural generation pipelines and game systems. Participants will use few shot learning and function calling to let language models generate resources and interact with game state at runtime, and learn how to use Godot's resource system and signaling system effectively for these use cases.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "36653be3-bb57-59ba-8070-ca8714978b0e",
+                      "id": 133,
+                      "code": "NYEGPV",
+                      "public_name": "Simon",
+                      "avatar": "https://talks.godotengine.org/media/avatars/profile_C3Bkn72.png",
+                      "biography": "Simon is a data scientist and game designer who has been talking to computers for twenty years. He is very uncomfortable now that they've started talking back.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/KMS9DA/",
+                  "id": 148,
+                  "guid": "84c05364-cc50-5156-b1d4-99d3d4412a6e",
+                  "date": "2025-05-05T11:30:00-04:00",
+                  "start": "11:30",
+                  "logo": null,
+                  "duration": "03:00",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-148-building-a-godot-plugin-with-gdextension",
+                  "title": "Building a Godot Plugin with GDextension",
+                  "subtitle": "",
+                  "track": "Workshop",
+                  "type": "Workshop",
+                  "language": "en",
+                  "abstract": "Learn how to write a plugin for Godot using C++, build for distribution as a GDExtension, write unit tests and setup test and build automations via GitHub Actions.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "7d1f78f9-e911-5143-b46a-c43f20b18e27",
+                      "id": 154,
+                      "code": "UHTYFA",
+                      "public_name": "Scott Doxey",
+                      "avatar": null,
+                      "biography": "I've released 150+ open source projects on  GitHub, I've won awards for Best in VR and Best of Accessibility at the 2020 Reality Hack Logo MIT Reality Hack, I run the Purple Monkey Game Jam Logo Purple Monkey Game Jam, given talks at Boston Game Dev meetups, and I just released my first game for mobile platforms called Flip Jacks.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/UB7SSS/",
+                  "id": 157,
+                  "guid": "a48618ee-ee02-5481-9238-0ad2e9507639",
+                  "date": "2025-05-05T14:45:00-04:00",
+                  "start": "14:45",
+                  "logo": null,
+                  "duration": "02:15",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-157-narrative-design-for-solo-devs",
+                  "title": "Narrative Design for Solo Devs",
+                  "subtitle": "",
+                  "track": "Workshop",
+                  "type": "Workshop",
+                  "language": "en",
+                  "abstract": "Using the inkgd plugin, this workshop will walk through the foundational steps for integrating branching narratives for solo developers using Godot. Pairing lightweight tooling with robust variable handling, this workshop is for designers and developers who want to elevate their narratives with meaningful choices and dynamic storytelling.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "29f7cae8-b0ea-5361-856b-4ae1999a5ae9",
+                      "id": 161,
+                      "code": "SLK3TX",
+                      "public_name": "Nicholas O'Brien",
+                      "avatar": "https://talks.godotengine.org/media/avatars/smile_cropped_800x800_jeKIDlV.jpg",
+                      "biography": "Nicholas O'Brien is a game designer, artist, and founder of the solo-studio Essay Games. He makes nuanced, story-driven games about complex issues pulling from extensive research or personal experience. His work has been featured in Kotaku, Rock Paper Shotgun, NOW PLAY THIS!, MAGFest, Narrascope, The Guardian, and The New York Times.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                }
+              ],
+              "Small Room": [
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/RZJZZD/",
+                  "id": 144,
+                  "guid": "ec64df72-2b27-5e09-980b-2358979e294c",
+                  "date": "2025-05-05T14:45:00-04:00",
+                  "start": "14:45",
+                  "logo": null,
+                  "duration": "02:15",
+                  "room": "Small Room",
+                  "slug": "godotcon-us-2025-144-multiplayer-basics-in-godot",
+                  "title": "Multiplayer Basics in Godot",
+                  "subtitle": "",
+                  "track": "Workshop",
+                  "type": "Workshop",
+                  "language": "en",
+                  "abstract": "Build the basic components needed for a peer to peer multiplayer game.\r\n- Creating a server and connecting to other computers\r\n- Leveraging the MultiplayerSpawner, MultiplayerSynchronizer nodes\r\n- How to use RPC functions\r\n- Managing data\r\n- Tips for optimization",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "a683fa07-d489-5f85-919d-93912ba9d8a9",
+                      "id": 151,
+                      "code": "UHTGD7",
+                      "public_name": "Travis Hunter",
+                      "avatar": "https://talks.godotengine.org/media/avatars/linkedin_headshot_small_VAxMLyQ.jpg",
+                      "biography": "Started using Godot in 2022. Completed 15+ Godot game jams.\r\nPassionate about teaching and building cool things!\r\nMy itch page: https://travh98.itch.io/",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                }
+              ]
+            }
+          },
+          {
+            "index": 2,
+            "date": "2025-05-06",
+            "day_start": "2025-05-06T04:00:00-04:00",
+            "day_end": "2025-05-07T03:59:00-04:00",
+            "rooms": {
+              "Large Room": [
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/KYP98P/",
+                  "id": 216,
+                  "guid": "bef077c8-e03a-507c-be78-211ee075645e",
+                  "date": "2025-05-06T09:00:00-04:00",
+                  "start": "09:00",
+                  "logo": null,
+                  "duration": "00:45",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-216-opening-keynote-w-emilio-coppola-head-of-the-godot-foundation",
+                  "title": "Opening Keynote w/ Emilio Coppola: Head of the Godot Foundation",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Keynote",
+                  "language": "en",
+                  "abstract": "Emilio Coppola, head of the Godot Foundation, kicks off the conference with opening remarks.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "57fcfe9d-889e-5aff-b0f1-7b4748d3e56b",
+                      "id": 2,
+                      "code": "7UH9CL",
+                      "public_name": "Emi",
+                      "avatar": null,
+                      "biography": null,
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/UCLFXR/",
+                  "id": 202,
+                  "guid": "fd900396-9b16-5625-b2dc-c54089d589c9",
+                  "date": "2025-05-06T10:00:00-04:00",
+                  "start": "10:00",
+                  "logo": null,
+                  "duration": "00:50",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-202-state-of-godot-and-the-web",
+                  "title": "State of Godot and the Web",
+                  "subtitle": "",
+                  "track": "Godot Update",
+                  "type": "Talk: Long",
+                  "language": "en",
+                  "abstract": "The Web platform has grown a lot since the days of Flash, if you're old enough!\r\n\r\nThis talk intends to give viewers an overview of the Web platform and how Godot can be used to create great experiences on it.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "f10208d7-5c56-57ac-9363-ae01b86ce165",
+                      "id": 194,
+                      "code": "VC3KGG",
+                      "public_name": "Adam Scott",
+                      "avatar": null,
+                      "biography": "Will fill later",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/MPXGGE/",
+                  "id": 200,
+                  "guid": "caed6c92-efe8-5061-ac77-b8c85efde24d",
+                  "date": "2025-05-06T14:30:00-04:00",
+                  "start": "14:30",
+                  "logo": null,
+                  "duration": "00:50",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-200-what-s-new-in-xr-android-2025-",
+                  "title": "What’s new in XR & Android (2025)",
+                  "subtitle": "",
+                  "track": "Godot Update",
+                  "type": "Talk: Long",
+                  "language": "en",
+                  "abstract": "Discover what's new in XR and Android in 2025 for Godot developers!\r\n\r\nWe'll provide updates, new development and features in Godot XR since 2024, and dive in depth through live demos.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "2f117bf4-cce0-5aff-8a6c-0ad87473f809",
+                      "id": 55,
+                      "code": "LHABCA",
+                      "public_name": "David Snopek",
+                      "avatar": "https://talks.godotengine.org/media/avatars/2023-08-30_19.31.01_dLUMB6Q_cropped_SZy2RQY.jpg",
+                      "biography": "I learned how to program on the Commodore 64 back when I was ~8 years old, making dumb little games in BASIC. :-) Ever since then, I've been making games on and off!\r\n\r\nNow I'm a Godot contributor on the XR and GDExtension teams, and work for W4 Games. I make my own little games in Godot, primarily focused around VR or online multiplayer.",
+                      "answers": []
+                    },
+                    {
+                      "guid": "5267dea5-8264-5e62-84dd-880369d0264f",
+                      "id": 66,
+                      "code": "PWPSEW",
+                      "public_name": "Fredia L Huya-Kouadio",
+                      "avatar": "https://talks.godotengine.org/media/avatars/265746307_104509525422638_7160966950229910288_n_PXdEioI.jpg",
+                      "biography": "Godot Lead Android maintainer & maintainer in the Godot XR team with a focus on Android XR platforms.\r\n\r\nCreator and maintainer of the Godot Android Editor and of the Godot XR Editor.",
+                      "answers": []
+                    },
+                    {
+                      "guid": "cffb579f-9ab5-517a-a972-c94cd1b7f017",
+                      "id": 67,
+                      "code": "UTXDTW",
+                      "public_name": "Logan Lang",
+                      "avatar": "https://talks.godotengine.org/media/avatars/Headshot_OJoWEif.png",
+                      "biography": "I'm a Godot XR maintainer working for W4 Games.\r\nI create entertaining and educational Godot related content on my YouTube channel! \r\nhttps://www.youtube.com/@DevLogLogan",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/XMBFFK/",
+                  "id": 155,
+                  "guid": "164cb6c7-aece-550a-adeb-95c656a2f73e",
+                  "date": "2025-05-06T15:45:00-04:00",
+                  "start": "15:45",
+                  "logo": null,
+                  "duration": "00:50",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-155-keeper-to-keepers-adding-multiplayer-to-dome-keeper",
+                  "title": "Keeper to Keepers: Adding Multiplayer to Dome Keeper",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Long",
+                  "language": "en",
+                  "abstract": "The age-old wisdom for adding multiplayer to a complex single player game is: Don't.\r\n\r\nThis talk will cover how we added mixed local and online multiplayer to an existing codebase of tens of thousands of lines of GDScript and how you can think about systems in your game to do the same.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "88bafa3d-b8d0-5e76-9114-82e78064a955",
+                      "id": 126,
+                      "code": "XEBASF",
+                      "public_name": "Chris Ridenour",
+                      "avatar": "https://talks.godotengine.org/media/avatars/2024_square_BZfEqlS.jpg",
+                      "biography": "Chris is the founder of KAR Games, working on the early access title Drift: Space Survival and the multiplayer update for Dome Keeper. Before getting into games, Chris spent a decade in the startup world as a serial founder and CTO. His three kids are likely to be seen climbing on him during Discord calls.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/U7EAPK/",
+                  "id": 152,
+                  "guid": "fa392548-d483-578b-81da-6380d90af8b5",
+                  "date": "2025-05-06T17:00:00-04:00",
+                  "start": "17:00",
+                  "logo": null,
+                  "duration": "00:50",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-152-improving-your-ui-in-godot",
+                  "title": "Improving Your UI in Godot",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Long",
+                  "language": "en",
+                  "abstract": "Rawb, an experienced Art Director and Solo Dev, teaches you beginner principles for designing appealing and accessible UI, as well as the nodes and code (C#) commonly used to implement it in the Godot engine. We’ll discuss step-by-step how to plan, mock-up, code, and animate common UI elements such as menus, HUDs, and cursors, in this interactive crash course.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "ead4681b-7e38-59a8-9acb-e8c17fd38bf4",
+                      "id": 157,
+                      "code": "9LKEBY",
+                      "public_name": "Rawb Herb",
+                      "avatar": "https://talks.godotengine.org/media/avatars/IMG_9335_aSnBcip.jpeg",
+                      "biography": "Solo Developer of a Tennis RPG, previously an Art Director at Whitethorn Games, Rawb has led art teams of 15+ artists for projects such as Whalefall and Raspberry Coast, and contributed concepts and UI to indie games such as Calico and Off-Grid Life. He’s worked on Global Game Jam teams to make smaller games including Pawmune and Aspiring Monster.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                }
+              ],
+              "Small Room": [
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/8ELTUC/",
+                  "id": 177,
+                  "guid": "7f6567e3-7081-576c-9230-1186b510c65f",
+                  "date": "2025-05-06T11:15:00-04:00",
+                  "start": "11:15",
+                  "logo": null,
+                  "duration": "00:25",
+                  "room": "Small Room",
+                  "slug": "godotcon-us-2025-177-cross-disciplinary-collaboration-in-godot",
+                  "title": "Cross-Disciplinary Collaboration in Godot",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Short",
+                  "language": "en",
+                  "abstract": "It can be tough to bring together teammates from multiple disciplines, but Godot has lots of features to make it easier! Sarah and Casey will discuss their experience collaborating with no-code designers, artists, and writers on Merchants of Rosewall, and share some tips on how to leverage Godot to help no-code teammates work in the engine.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "4a5552bd-038a-5a86-9a00-12e5f9394341",
+                      "id": 180,
+                      "code": "MT993F",
+                      "public_name": "Casey Dahlgren",
+                      "avatar": "https://talks.godotengine.org/media/avatars/bafkreicnwln7ooo7vbjphuvmgnhh6pyqe64b63tpsmf4m4dk4txhqfbohq_lpWlk1D.jpg",
+                      "biography": "I'm a designer and engineer at Big Blue Sky Games. I still play Neopets.\r\n\r\nYou can find me at naud.bsky.social!",
+                      "answers": []
+                    },
+                    {
+                      "guid": "07da5e15-459b-5018-abd4-4117ec816a7c",
+                      "id": 188,
+                      "code": "UFXNQM",
+                      "public_name": "Sarah Nuse",
+                      "avatar": null,
+                      "biography": null,
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/XCGSSH/",
+                  "id": 127,
+                  "guid": "b7cb8725-fd38-5a97-bb5b-68c299287b6d",
+                  "date": "2025-05-06T13:15:00-04:00",
+                  "start": "13:15",
+                  "logo": null,
+                  "duration": "00:50",
+                  "room": "Small Room",
+                  "slug": "godotcon-us-2025-127-making-operation-outbreak-an-immersive-educational-experience-on-infectious-disease-into-a-godot-game",
+                  "title": "Making Operation Outbreak, an immersive educational experience on infectious disease, into a Godot game",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Long",
+                  "language": "en",
+                  "abstract": "Operation Outbreak (OO) is an innovative platform for science education that uses a mobile app to spread a “digital” virus among participants’ phones via Bluetooth. This enables immersive real-life outbreak simulations that have been tested in hundreds of schools in the US and abroad. You can learn more about OO by checking this website: https://operationoutbreak.org/\r\nIn this talk, we will describe the prototype of a Godot-based port of the Operation Outbreak educational game. We started working on this prototype back in December of 2024, based on an initial exploration by a graduate intern in the Colubri lab, which were continued by two skilled Godot developers that joined the team after reading a posting about the project on the Godot forum. The prototype successfully implemented all the basic functionality of the real-life Operation Outbreak simulations, including contact detection, disease transmission, illness progression, resource management, etc. Furthermore, the Godot-based OO game reuses all the existing OO backend infrastructure, which makes it possible to read the same parameters that drive the phone-based simulations, store the resulting data in the same databases, and explore the data interactively with the web-based Outbreak Visualizer tool.\r\nWe are currently designing plans to pilot this prototype at schools in the US and abroad, to evaluate the engagement of students with this new educational game and collect their feedback. Based on the success of these plans in the coming months, we may be able to report preliminary results and insights during the talk.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "bdc46bea-616d-50a4-822f-88e2d6a5aa49",
+                      "id": 136,
+                      "code": "MDQ3BP",
+                      "public_name": "Andres Colubri",
+                      "avatar": "https://talks.godotengine.org/media/avatars/dibujado_i6AhuHF.png",
+                      "biography": "Andrés Colubri is an assistant professor in the Department of Genomics and Computational Biology at the University of Massachusetts Chan Medical School. He holds a PhD in Mathematics from the Universidad Nacional del Sur in Argentina and an MFA from the Design Media Arts Department at the University of California, Los Angeles.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/7NYVL9/",
+                  "id": 117,
+                  "guid": "77bf8b16-37b9-5cdd-a321-6ecfe5b35fbd",
+                  "date": "2025-05-06T14:30:00-04:00",
+                  "start": "14:30",
+                  "logo": null,
+                  "duration": "00:25",
+                  "room": "Small Room",
+                  "slug": "godotcon-us-2025-117-events-are-the-way-to-go-dot-",
+                  "title": "Events Are The Way To Go(dot)",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Short",
+                  "language": "en",
+                  "abstract": "Very quickly into the development of a game, any developer will find themselves thinking about how to best \"hook everything up\". Either from character to object, character to character or character to UI. \r\n\r\nYou can do this by directly referencing your object or calling get_parent 18 times but eventually you're going to start regretting that decision. Things moving, references breaking, scenes having more and more dependencies. Don't worry - the Event Bus pattern has you covered!\r\n\r\nEvery game can and likely will benefit from some use of the Event Bus pattern. This talk aims to introduce you to the pattern, why its valuable and how to approach a few different implementations in Godot!",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "c3eb5445-396b-5c9e-b6a8-22a3040d789f",
+                      "id": 122,
+                      "code": "9BEUB7",
+                      "public_name": "Eric Peterson",
+                      "avatar": "https://talks.godotengine.org/media/avatars/bench-flipped-cropped-2_cuv9ebM.jpg",
+                      "biography": "Eric loves making games and drawing little guys. \r\n\r\nAfter a decade of using Unity, he found Godot and has never looked back. \r\nEric's first shipped title was a labor of love over many years but he has since turned his attention to super small and punchy games! \r\n\r\nHe does his work under the name \"Baja the Frog\" online.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/ZDP7XM/",
+                  "id": 212,
+                  "guid": "0017f090-6809-5b7a-a801-e182f7252397",
+                  "date": "2025-05-06T14:55:00-04:00",
+                  "start": "14:55",
+                  "logo": null,
+                  "duration": "00:25",
+                  "room": "Small Room",
+                  "slug": "godotcon-us-2025-212-using-godot-for-mixed-reality-livestreaming",
+                  "title": "Using Godot for mixed-reality livestreaming",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Short",
+                  "language": "en",
+                  "abstract": "I've been working on an unusual project with Godot recently, and I thought it might make for a potentially interesting talk. I'm working on a mixed-reality livestreaming setup in Godot, blending together the live feed of my camera with a 3D scene matched to the perspective of the camera.\r\n\r\nThe project is still pretty early, but I could already easily fill a lightning or short talk with all the strange things I've done to achieve this so far; plus, I expect to have it a lot more fleshed out in the month or so.\r\n\r\nI've attached an image of one of the effects I've been working on that I think is interesting; there's a transparent quad behind me in my real world-space, clipping into a physical table in the background, with accurate(ish) depth of field blur.\r\n\r\nimage: https://cdn.badcop.live/2025/03/image%20%281%29.png\r\n\r\nin the (near) future, the idea is that these quads will be displaying different windows from my computer, and shuffling around depending on what program I have foregrounded",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "f574aad1-be5b-5196-af96-7b07a4adb94d",
+                      "id": 198,
+                      "code": "FTS3YF",
+                      "public_name": "badcop",
+                      "avatar": "https://talks.godotengine.org/media/avatars/fish_profile_vLBXLD4.png",
+                      "biography": "i am a serial game jammer / twitch streamer",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/FYE3UE/",
+                  "id": 138,
+                  "guid": "a0a83eff-80fc-5124-8f21-ec2821378e25",
+                  "date": "2025-05-06T15:45:00-04:00",
+                  "start": "15:45",
+                  "logo": null,
+                  "duration": "00:50",
+                  "room": "Small Room",
+                  "slug": "godotcon-us-2025-138-adding-new-script-languages-to-godot",
+                  "title": "Adding new Script Languages to Godot",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Long",
+                  "language": "en",
+                  "abstract": "Godot has two major languages it supports for scripting: GDScript and C#. But what if you wanted to write your Godot scripts in a different language? With the new GDExtension system in Godot 4+, we now have the ability add other languages. This talk will take you through the process of binding a language to Godot, using examples from Godot Dart. It will take you through some of the inner workings of GDExtensions, the pitfalls of using GDExtension to add a Script Language, and various ways for new languages to interact with core Godot features, addons, and other extensions.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "e2c35205-2714-5c54-9766-f188cc967bc4",
+                      "id": 145,
+                      "code": "7X7NXX",
+                      "public_name": "Jeff Ward",
+                      "avatar": "https://talks.godotengine.org/media/avatars/1589-400o400o1-Mq3e5hdSvwK2r1tyyYTPbe-6_ewNq1TB.jpg",
+                      "biography": "Jeff is a former game developer, mobile engineer, and manager who now specializes in doing fun things with Dart and Flutter, including personal projects embedding Dart into game engines like Godot. At Datadog, he leads the development of several Datadog cross platform SDKs.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                }
+              ]
+            }
+          },
+          {
+            "index": 3,
+            "date": "2025-05-07",
+            "day_start": "2025-05-07T04:00:00-04:00",
+            "day_end": "2025-05-08T03:59:00-04:00",
+            "rooms": {
+              "Large Room": [
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/MDQQJH/",
+                  "id": 114,
+                  "guid": "f65027ed-9481-5e84-b10d-1a39b121c32b",
+                  "date": "2025-05-07T09:25:00-04:00",
+                  "start": "09:25",
+                  "logo": null,
+                  "duration": "00:25",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-114-i-made-a-game-on-my-phone-and-it-actually-works-",
+                  "title": "I Made a Game On My Phone (And It Actually Works)",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Short",
+                  "language": "en",
+                  "abstract": "Whether you want to develop entirely on your phone or mix it into your development pipeline, I've got tips, tricks, and thoughts on mobile Godot development.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "b7edaf19-1afd-583d-8655-d42e759698b1",
+                      "id": 120,
+                      "code": "B8KWSD",
+                      "public_name": "Chad Stewart",
+                      "avatar": "https://talks.godotengine.org/media/avatars/20240521_144103_oN3wx2j.jpg",
+                      "biography": "Chad Stewart started his career doing AAA game development at BioWare. After working his way up to Development Director on the MMO Star Wars: The Old Republic, he eventually left to co-found Binary Solo, a four person indie studio. After ten years of consulting and original IPs, he has found himself as a Senior Engineer at Skymap Games.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/UA37CQ/",
+                  "id": 161,
+                  "guid": "7a35c923-9e8d-5ad9-89d7-46cb91d625c0",
+                  "date": "2025-05-07T10:15:00-04:00",
+                  "start": "10:15",
+                  "logo": null,
+                  "duration": "00:25",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-161-shader-art-write-code-to-make-something-beautiful",
+                  "title": "Shader Art: Write Code to Make Something Beautiful",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Short",
+                  "language": "en",
+                  "abstract": "Hi, I've released several Godot shaders, and am currently releasing some planet shaders as open source.\r\n\r\nIn this talk, I'll make the case for using shaders as a canvas for expressing art from code. I'll break down how you can layer simple techniques to make amazing images and scenes iteratively. I'll reference the CSS art community (like https://a.singlediv.com/). I'll advocate for the limiting the use of AI in shaders to discover what you don't know.\r\n\r\nAs a conclusion, I'll show that those of us who may struggle to draw may find an artistic expression through code.\r\n\r\nI'm an experienced conference speaker (in the open source, open standards, and javascript communities), so I know how quickly 25 minutes can go. My talk will be polished with good slides, and well practiced. I'll have additional materials for viewers to explore.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "e0fc53ea-0856-557b-9a26-bb6811291133",
+                      "id": 165,
+                      "code": "GM33TK",
+                      "public_name": "Nathan Fritz",
+                      "avatar": "https://talks.godotengine.org/media/avatars/bsky-profile_IYXyTIk.jpg",
+                      "biography": "I enable others to do more.\r\n\r\n👨‍💻 GitHub/npm dev (opinions expressed are my own)\r\n🕹️ Hobby game dev",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/WCK7TK/",
+                  "id": 142,
+                  "guid": "b8af9b08-0e63-5156-8d60-cc5482020977",
+                  "date": "2025-05-07T11:30:00-04:00",
+                  "start": "11:30",
+                  "logo": null,
+                  "duration": "00:50",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-142-unit-testing-games-tdd-godot-gut",
+                  "title": "Unit Testing Games - TDD/Godot/GUT",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Long",
+                  "language": "en",
+                  "abstract": "TDD and game creation don't always go hand in hand, but when they do it can make iterating on your game faster with less bugs.  Regardless of your experience with TDD, programming or game development there will be something in this talk for you.  We'll cover the basics of TDD, discuss the obvious aspects of a game to write tests for, and more involved examples of integration testing.\r\n\r\nExamples will all be using Godot/GDScript/GUT (since I'm the author of the latter and that's what it works with), but most of the talk will apply to any testing framework, language or engine.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "1a658069-743a-55f8-b109-b9410e5cf25c",
+                      "id": 149,
+                      "code": "Q9KL8A",
+                      "public_name": "Butch Wesley",
+                      "avatar": "https://talks.godotengine.org/media/avatars/icon_Ik2uNWz.png",
+                      "biography": "Programmer, comedian, TDD doer, author of GUT.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/LERNUR/",
+                  "id": 141,
+                  "guid": "d7c5808a-5ed2-5cf2-b011-84082d6f336f",
+                  "date": "2025-05-07T14:00:00-04:00",
+                  "start": "14:00",
+                  "logo": null,
+                  "duration": "00:25",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-141-the-youtube-crash-course-for-game-devs",
+                  "title": "The Youtube Crash Course for Game Devs",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Short",
+                  "language": "en",
+                  "abstract": "Game developers often seek innovative ways to showcase their work, share experiences, and connect with their audience. I'll share my insights over 2+ years of building a Youtube channel including how YouTube can serve as a powerful platform for game developers to build an engaged community and market their games. We’ll discuss practical steps for launching a channel—from content strategy and branding to choosing the right equipment and production techniques. We will also cover methods for growing a loyal subscriber base through engaging storytelling, consistent posting, and responsive community management.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "2adb8db3-7df2-5c4c-ad86-e39bb92ba030",
+                      "id": 148,
+                      "code": "ALZF7Z",
+                      "public_name": "StayAtHomeDev",
+                      "avatar": "https://talks.godotengine.org/media/avatars/profile_M3EG5Sx.png",
+                      "biography": "Julian, aka StayAtHomeDev, is a content creator and game developer. Over the last two years, he has focused on supporting other Godot Engine projects and developers through his Youtube channel with game development tutorials, weekly game showcases, and the 1st annual Godot Game Awards in 2024.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/9AEXCB/",
+                  "id": 132,
+                  "guid": "006c7023-6bc7-5133-8061-124409243c15",
+                  "date": "2025-05-07T14:45:00-04:00",
+                  "start": "14:45",
+                  "logo": null,
+                  "duration": "00:50",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-132-leveling-up-multiplayer-in-godot-from-local-networking-to-scalable-solutions",
+                  "title": "Leveling Up Multiplayer in Godot: From Local Networking to Scalable Solutions",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Long",
+                  "language": "en",
+                  "abstract": "Multiplayer games bring players together, but building robust multiplayer systems can be challenging. Godot provides the tools for local networking and peer-to-peer connections, but scaling beyond these setups often requires additional frameworks. In this talk, we’ll explore the full spectrum of multiplayer development in Godot: from local peer-to-peer setups to advanced solutions like hole punching with WebSockets and hosted, autoscaling servers using Agones on Kubernetes. Whether you’re building a small co-op game or a global multiplayer experience, this talk will equip you with the knowledge to succeed.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "4e069b46-1143-51cc-903a-370476f05742",
+                      "id": 140,
+                      "code": "KSRJL8",
+                      "public_name": "James Clancey",
+                      "avatar": "https://talks.godotengine.org/media/avatars/JamesClanceyHeadShot_Syynw9v.png",
+                      "biography": "James Clancey is a seasoned software developer with over 13 years of experience in app and game development, including VR and AR platforms. James currently works at Xibbon working on Xogot. Previously, James held roles at Microsoft, Meta, and Xamarin.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/8T7GDX/",
+                  "id": 218,
+                  "guid": "553f46a4-9ac7-5bd5-bcee-858a92ec1603",
+                  "date": "2025-05-07T16:00:00-04:00",
+                  "start": "16:00",
+                  "logo": null,
+                  "duration": "01:00",
+                  "room": "Large Room",
+                  "slug": "godotcon-us-2025-218-lightning-talks-",
+                  "title": "Lightning Talks!",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Lightning",
+                  "language": "en",
+                  "abstract": "## Bringing the Arcade to the Museum with Godot\r\n\r\nInterested in making physical games with Godot? In this lightning talk, Tyler and Annalivia discuss making SUPER ULTRA RACING XTREME, an arcade racing table, for the San Fransisco Museum of Modern Art. We'll break down the technical setup of the arcade table and its Godot integration, as well as the challenges of developing games for institutions and permanent display.\r\n\r\n## Log.gd, a Godot pretty-printer\r\n\r\nLog.gd is a drop-in `print(...)` replacement that formats and colorizes Godot data structures. It is focused on readable output and ergonomic call-sites.\r\n\r\nWe'll look at how this addon was implemented (spoiler alert, we wrap `print_rich()`, branch on the passed object type, and recurse!).\r\n\r\nWe'll see some of Log's features, including colors, supported data structures, spaces between arguments, not printing a million-billion items in your lists, and prepend the module and line-number in the output.\r\n\r\nWe'll look at some limitations, such as term-colors and the lack of a call-stack in production builds and threads.\r\n\r\nWe'll dream about future work and hope to inspire fancy versions of Godot's built-in print functions.\r\n\r\nFor the sticklers out there, I'll also mention that yes, you should be using the debugger, not print statements, to debug your code. But, you'll see that you still want a nice looking log when you run your game.\r\n\r\nYou can find more on Log.gd here: https://russmatney.github.io/log.gd/\r\n\r\n## Going Mobile with Godot\r\n\r\nHalf of all gaming revenue is on mobile, but most Godot developers do not target mobile.  This lightning talk will make the case that Godot developers should consider targeting mobile gamers, and will provide guidance on simple steps you can take to enable gamers on iOS and Android to enjoy your games.\r\n\r\n## Lessons from 25+ Game Jams with Godot\r\n\r\nI go over lessons learned from participating in 25+ jams with Godot, primarily for the Godot Wild Jam. \r\nhttps://itch.io/c/3319934/game-jam-titles\r\n\r\nThis will briefly touch on scoping, designing, development, production, motivation management, and team management.\r\n\r\n\r\n## Synths and Sound Design in Godot with Csound\r\n\r\nWhat if you could design and control custom synthesizers directly within Godot? godot-csound enables real-time sound synthesis, allowing developers to create procedural audio systems tailored to their games.\r\n\r\nIn this talk, we’ll cover the technical process of writing synthesizers in Godot using godot-csound, from generating basic waveforms to designing more complex, interactive synths. We’ll explore how to send parameters from Godot to Csound, implement real-time control for dynamic sound variation, and optimize performance for game-ready audio synthesis.\r\n\r\nBest of all, godot-csound is free and open source, making it accessible for developers, composers, and audio enthusiasts alike. Whether you're building a dynamic soundtrack, interactive sound effects, or experimental audio systems, this session will serve as an introduction to creating custom synthesizers inside Godot.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "f4835d0d-405e-5e71-b923-701c6b971088",
+                      "id": 82,
+                      "code": "QWTAFD",
+                      "public_name": "Joseph Hill",
+                      "avatar": "https://talks.godotengine.org/media/avatars/JosephHill_400x400_PxOiKnj.png",
+                      "biography": "Joseph helped start BoGo, the Boston Godot Developer group. By day, he works with Swift and Godot with Miguel de Icaza at Xibbon. Previously, he helped Miguel found Xamarin to bring C# to mobile and helped C#-enable many game engines along the way. Beyond Godot, Joseph helped launch and grow several local user groups in Boston and around the world.",
+                      "answers": []
+                    },
+                    {
+                      "guid": "4e1713b3-2fcf-5754-a0b0-b7786d48498d",
+                      "id": 139,
+                      "code": "EKRL9J",
+                      "public_name": "Marek Belski",
+                      "avatar": "https://talks.godotengine.org/media/avatars/1516529650284_m2H6MPP.jpeg",
+                      "biography": "Coming from a background in software engineering in the Bay Area. I started at a game publisher, moved to the edu-tech space, and then a couple of years ago, made the switch to game dev full-time. I've since participated in over 20 Godot Wild Jams and have released a suite of plugins on the Godot Asset Library.\r\n\r\nhttps://github.com/Maaack/",
+                      "answers": []
+                    },
+                    {
+                      "guid": "2bf3bebe-2fe1-537f-8281-0baf44201da5",
+                      "id": 150,
+                      "code": "EQPWEZ",
+                      "public_name": "Annalivia Martin-Straw",
+                      "avatar": "https://talks.godotengine.org/media/avatars/KuchipatchiFrontFacing_GTxhvyq.png",
+                      "biography": "annalivia martin-straw is an artist and game developer.",
+                      "answers": []
+                    },
+                    {
+                      "guid": "303e58e3-e60c-5af0-a202-3c385249c3ba",
+                      "id": 168,
+                      "code": "RNNHYA",
+                      "public_name": "Werner Mendizabal",
+                      "avatar": null,
+                      "biography": "Werner Mendizabal is a game developer and the creator of godot-csound, an open-source project that brings real-time sound synthesis to Godot. Passionate about game development and open-source software.",
+                      "answers": []
+                    },
+                    {
+                      "guid": "7cd62df5-63c5-5f49-a9a1-3375130cda88",
+                      "id": 179,
+                      "code": "ESCHUG",
+                      "public_name": "Russell Matney",
+                      "avatar": "https://talks.godotengine.org/media/avatars/portrait512_nDMmwtR.png",
+                      "biography": "After a decade of software engineering (web+data eng), I switched to full-time game dev in 2022.\r\nI launched my first 3 steam games in 2024, 2 of which are open-source Godot games. I have more releases planned, but am also looking for more stable studio work, especially with Godot - feel free to reach out!",
+                      "answers": []
+                    },
+                    {
+                      "guid": "a195d331-8cf2-5b0b-bd3f-593694a6ce11",
+                      "id": 202,
+                      "code": "QR9M9X",
+                      "public_name": "Tyler \"ambiguousname\" Knowlton",
+                      "avatar": "https://talks.godotengine.org/media/avatars/1000010427_PVxOUuP.png",
+                      "biography": "Tyler is the co-creator of SUPER ULTRA RACING XTREME, an arcade table built with Godot that exhibited at the San Francisco Museum of Modern Art. He is pursuing a Master's in Scientific Computing and Applied Mathematics at the University of California, Santa Cruz.\r\n\r\nYou can find more of his work online at https://ambiguous.name/",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                }
+              ],
+              "Small Room": [
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/XBJFYV/",
+                  "id": 203,
+                  "guid": "8d1999eb-8c9a-568f-8994-1501ad54b854",
+                  "date": "2025-05-07T09:00:00-04:00",
+                  "start": "09:00",
+                  "logo": null,
+                  "duration": "00:50",
+                  "room": "Small Room",
+                  "slug": "godotcon-us-2025-203-libgodot-embed-godot-engine-everywhere",
+                  "title": "LibGodot - Embed Godot Engine Everywhere",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Long",
+                  "language": "en",
+                  "abstract": "LibGodot will be one of the major features of Godot 4.5. Our PR has already been submitted and reviewed by multiple Godot Maintainers. It is scheduled to be merged early in the Godot 4.5 development cycle.\r\n\r\nLibGodot is the short name of multiple new Godot Engine features:\r\n- Build Godot Engine as a shared or static library\r\n- This library can be embedded into a host application written in any language that supports the GDExtension API.\r\n- It is already being used in production with C++, TypeScript, and Swift. We are already working on other language support with our clients, which will be demonstrated during the talk.\r\n- LibGodot also enables embedding the Godot UI into the host application. UI embedding for iOS and Mac Catalyst is already available, and support for other platforms (MacOS, Windows, Linux, and Android) is already in progress and is planned to be included in Godot 4.5 and will be demonstrated during the talk.\r\n\r\nIn the talk, I will describe the features of LibGodot, its use cases both in Game and Application development, and show live demonstrations of some of them, including:\r\n- LibGodot allows enhancing mobile apps with interactive 2D and 3D content\r\n- LibGodot will enable .NET developers to start up Godot from their .NET application so they can use standard .NET tools for development\r\n- LibGodot can be used to provide complex 3D graphics capabilities in Qt apps\r\n- LibGodot can be used from Python scripts and enable complex automation workflows",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "c443c8f6-40ce-5f1d-b21c-1a65ca9ae3d5",
+                      "id": 10,
+                      "code": "JSRKQK",
+                      "public_name": "Gergely Kis",
+                      "avatar": "https://talks.godotengine.org/media/avatars/Gergely_xviSdl9.png",
+                      "biography": "I am the Co-Founder and CTO of Migeran with over 21 years of experience as a Software Engineer, Software Architect, and CTO. We founded Migeran in 2007 together with my wife, Dr. Annamária Mattasits, our CEO. Our first product was acquired by Intel. We are Godot Engine Customization Experts with AR/VR, Automotive, Mobile, and Desktop projects.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/BHCUN9/",
+                  "id": 136,
+                  "guid": "d910065a-f427-531f-a498-b6e1c97b7dff",
+                  "date": "2025-05-07T11:30:00-04:00",
+                  "start": "11:30",
+                  "logo": null,
+                  "duration": "00:50",
+                  "room": "Small Room",
+                  "slug": "godotcon-us-2025-136-scratching-the-itch-io-godot-game-distribution-strategies",
+                  "title": "Scratching the itch.io – Godot Game Distribution Strategies",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Long",
+                  "language": "en",
+                  "abstract": "Getting your game onto Steam used to be a thousand mile journey, but nowadays all it takes is $100. That said, if you lack the marketing prowess to stand out, you'll be left floundering. Ideally, you want to bring your community to Steam, rather than build it there, so where do you build it? If you're just starting your game development journey with Godot, this talk will introduce you to building a home for your game and your studio at itch.io. This includes building and uploading your Godot project, the basics of page design, the tools for building a community, important site features, and a broad understanding of what itch.io is and how it can help you grow as a Godot developer.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "c42fba8f-457e-51c7-b11d-407893c9cc3e",
+                      "id": 143,
+                      "code": "3BEKBG",
+                      "public_name": "Danny Silvers",
+                      "avatar": "https://talks.godotengine.org/media/avatars/pax_0QosVMq.jpg",
+                      "biography": "Danny Silvers, a staunch indie advocate, is a developer with over 15 years of experience. He is the recipient of several of awards, including the BostonFIG Accessibility and Inclusion award for Mondrian – Plastic Reality. Danny is a graduate of the Savannah College of Art & Design and holds numerous certifications in art, business, and game design.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/JCDV3A/",
+                  "id": 204,
+                  "guid": "cb45476b-aaa4-545f-81c5-288f0c81c5e1",
+                  "date": "2025-05-07T13:30:00-04:00",
+                  "start": "13:30",
+                  "logo": null,
+                  "duration": "00:50",
+                  "room": "Small Room",
+                  "slug": "godotcon-us-2025-204-introducing-3d-tiles-for-godot",
+                  "title": "Introducing 3D Tiles For Godot",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Long",
+                  "language": "en",
+                  "abstract": "## 3D Tiles For Godot\r\n### Summary\r\nThe Battle Road Digital team partnered up with Cesium to integrate the 3D tiles ecosystem to Godot, bringing this open-source standard to the most popular and fastest growing open-source engine. This easy-to-use plug-in presents a huge opportunity for the community to effortlessly create experiences based in the real-world and to stream tiled, LODed 3D data. In addition, the Godot community will be able contribute to this constantly evolving standard.\r\n### Focus\r\nThis talk will focus on the work done to integrate Cesium as a plugin for Godot, the challenges we encountered, and the solutions we developed. We will also share how we believe these learnings can influence the development of the engine to better accommodate data- and processing-intensive applications moving forward.\r\n### Technologies\r\n- GDExtension\r\n- Godot Engine submodules\r\n- C++ bindings\r\n- Cesium Native (3D tiles)\r\n- glTF\r\n\r\n**Speakers:** Leónidas Neftalí González & Andrés Botero",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "a95da77d-cbf1-5a0b-8e8d-274e4413c13d",
+                      "id": 195,
+                      "code": "GSPH9A",
+                      "public_name": "Leonidas Neftali Gonzalez Campos",
+                      "avatar": "https://talks.godotengine.org/media/avatars/20240716_185502_LNUULP5.jpg",
+                      "biography": "C++ developer with an interest in low level programming, working on high performance Godot extensions",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                },
+                {
+                  "url": "https://talks.godotengine.org/godotcon-us-2025/talk/MPC3BC/",
+                  "id": 199,
+                  "guid": "c8c4ada5-854f-5d9c-8ec3-3a0168bf342e",
+                  "date": "2025-05-07T15:15:00-04:00",
+                  "start": "15:15",
+                  "logo": null,
+                  "duration": "00:25",
+                  "room": "Small Room",
+                  "slug": "godotcon-us-2025-199-enjoyable-game-architecture-with-godot-c-",
+                  "title": "Enjoyable Game Architecture with Godot & C#",
+                  "subtitle": "",
+                  "track": "Talk",
+                  "type": "Talk: Short",
+                  "language": "en",
+                  "abstract": "Chickensoft provides open-source tooling to help C# developers build great game architecture from the ground up. In this talk, we discuss why software architecture is important, challenges developers can face making architectural decisions in games, and how Chickensoft tools are designed to help overcome those challenges.",
+                  "description": null,
+                  "recording_license": "",
+                  "do_not_record": false,
+                  "persons": [
+                    {
+                      "guid": "ad66365f-17c1-545e-9240-e19cd1807e04",
+                      "id": 193,
+                      "code": "RY3E3J",
+                      "public_name": "Mark Wilson",
+                      "avatar": "https://talks.godotengine.org/media/avatars/IMG_5483c512_dyUaS30.jpg",
+                      "biography": "Autonomy researcher turned solo game dev. Interested in development tools, automated planning, procedural generation, and classical violin.",
+                      "answers": []
+                    }
+                  ],
+                  "links": [],
+                  "attachments": [],
+                  "answers": []
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }

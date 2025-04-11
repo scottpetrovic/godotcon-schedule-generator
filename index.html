@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Schedule</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      border-bottom: 2px solid #478CBF;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    
+    .date-info {
+      text-align: center;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+    
+    .day-container {
+      margin-bottom: 40px;
+    }
+    
+    .rooms-container {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .room {
+      flex: 1;
+      min-width: 0;
+    }
+    
+    .room-name {
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 5px 5px 0 0;
+      margin-bottom: 15px;
+    }
+    
+    .event {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 15px;
+      position: relative;
+    }
+    
+    .event-time {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .event-title {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+    
+    .event-type {
+      font-style: italic;
+      color: #666;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+    
+    .event-presenter {
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+    
+    .event-abstract {
+      font-size: 0.85em;
+      margin-top: 8px;
+      border-top: 1px dotted #ddd;
+      padding-top: 8px;
+    }
+    
+    .track-indicator {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 15px;
+      height: 100%;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .duration {
+      font-size: 0.8em;
+      color: #666;
+    }
+    
+    @media print {
+      body {
+        font-size: 10pt;
+      }
+      
+      .event-abstract {
+        font-size: 8pt;
+      }
+      
+      .event {
+        page-break-inside: avoid;
+      }
+      
+      .day-container {
+        page-break-before: always;
+      }
+      
+      .day-container:first-child {
+        page-break-before: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="loading">Loading conference data...</div>
+  <div id="schedule-container" style="display: none;">
+    <h1 id="conference-title"></h1>
+    <div class="date-info" id="conference-dates"></div>
+    
+    <div id="days-container"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Path to your JSON file
+      const jsonFilePath = 'schedule-data.json';
+      
+      // Fetch the JSON data
+      fetch(jsonFilePath)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          renderSchedule(data);
+        })
+        .catch(error => {
+          document.getElementById('loading').innerHTML = 'Error loading conference data. Please try again later.';
+          console.error('There has been a problem with your fetch operation:', error);
+        });
+    });
+
+    function renderSchedule(data) {
+      // Access the conference data
+      const conference = data.schedule.conference;
+      const primaryColor = conference.colors.primary;
+      
+      // Set conference title and dates
+      document.getElementById('conference-title').textContent = conference.title;
+      document.getElementById('conference-title').style.color = primaryColor;
+      
+      const startDate = new Date(conference.start);
+      const endDate = new Date(conference.end);
+      document.getElementById('conference-dates').textContent = formatDateRange(startDate, endDate);
+      
+      // Create a color map for tracks
+      const trackColors = {};
+      conference.tracks.forEach(track => {
+        trackColors[track.name] = track.color;
+      });
+      
+      // Render each day
+      const daysContainer = document.getElementById('days-container');
+      conference.days.forEach(day => {
+        // Create day container
+        const dayContainer = document.createElement('div');
+        dayContainer.className = 'day-container';
+        
+        // Add day heading
+        const dayHeading = document.createElement('h2');
+        const dayDate = new Date(day.date);
+        dayHeading.textContent = formatDay(dayDate);
+        dayHeading.style.color = primaryColor;
+        dayContainer.appendChild(dayHeading);
+        
+        // Create rooms container
+        const roomsContainer = document.createElement('div');
+        roomsContainer.className = 'rooms-container';
+        
+        // Add rooms for this day
+        if (day.rooms) {
+          Object.keys(day.rooms).forEach(roomName => {
+            const roomEvents = day.rooms[roomName];
+            
+            // Create room container
+            const roomDiv = document.createElement('div');
+            roomDiv.className = 'room';
+            
+            // Add room name
+            const roomNameDiv = document.createElement('div');
+            roomNameDiv.className = 'room-name';
+            roomNameDiv.textContent = roomName;
+            roomNameDiv.style.backgroundColor = primaryColor;
+            roomNameDiv.style.color = 'white';
+            roomDiv.appendChild(roomNameDiv);
+            
+            // Add events for this room
+            roomEvents.forEach(event => {
+              const eventDiv = document.createElement('div');
+              eventDiv.className = 'event';
+              
+              // Add track indicator
+              if (event.track && trackColors[event.track]) {
+                const trackIndicator = document.createElement('div');
+                trackIndicator.className = 'track-indicator';
+                trackIndicator.style.backgroundColor = trackColors[event.track];
+                eventDiv.appendChild(trackIndicator);
+                eventDiv.style.paddingRight = '25px';
+              }
+              
+              // Add event time
+              const timeDiv = document.createElement('div');
+              timeDiv.className = 'event-time';
+              timeDiv.textContent = `${event.start} `;
+              
+              // Add duration
+              const durationSpan = document.createElement('span');
+              durationSpan.className = 'duration';
+              durationSpan.textContent = `(${event.duration})`;
+              timeDiv.appendChild(durationSpan);
+              
+              eventDiv.appendChild(timeDiv);
+              
+              // Add title
+              const titleDiv = document.createElement('div');
+              titleDiv.className = 'event-title';
+              titleDiv.textContent = event.title;
+              eventDiv.appendChild(titleDiv);
+              
+              // Add event type
+              if (event.type) {
+                const typeDiv = document.createElement('div');
+                typeDiv.className = 'event-type';
+                typeDiv.textContent = `${event.track || ''} ${event.type}`.trim();
+                eventDiv.appendChild(typeDiv);
+              }
+              
+              // Add presenter(s)
+              if (event.persons && event.persons.length > 0) {
+                const presenterDiv = document.createElement('div');
+                presenterDiv.className = 'event-presenter';
+                
+                const presenters = event.persons.map(person => person.public_name).join(', ');
+                presenterDiv.textContent = `Presenter${event.persons.length > 1 ? 's' : ''}: ${presenters}`;
+                eventDiv.appendChild(presenterDiv);
+              }
+              
+              // Add abstract
+              if (event.abstract) {
+                const abstractDiv = document.createElement('div');
+                abstractDiv.className = 'event-abstract';
+                abstractDiv.textContent = event.abstract;
+                eventDiv.appendChild(abstractDiv);
+              }
+              
+              roomDiv.appendChild(eventDiv);
+            });
+            
+            roomsContainer.appendChild(roomDiv);
+          });
+        }
+        
+        dayContainer.appendChild(roomsContainer);
+        daysContainer.appendChild(dayContainer);
+      });
+      
+      // Hide loading and show schedule
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('schedule-container').style.display = 'block';
+    }
+
+    function formatDateRange(startDate, endDate) {
+      const options = { month: 'long', day: 'numeric', year: 'numeric' };
+      if (startDate.getFullYear() === endDate.getFullYear() && 
+          startDate.getMonth() === endDate.getMonth()) {
+        return `${startDate.toLocaleDateString('en-US', { month: 'long' })} ${startDate.getDate()}-${endDate.getDate()}, ${startDate.getFullYear()}`;
+      } else {
+        return `${startDate.toLocaleDateString('en-US', options)} - ${endDate.toLocaleDateString('en-US', options)}`;
+      }
+    }
+
+    function formatDay(date) {
+      const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+      return date.toLocaleDateString('en-US', options);
+    }
+  </script>
+</body>
+</html>
+  
+  <!-- <script type="module" src="/src/main.js"></script> -->
