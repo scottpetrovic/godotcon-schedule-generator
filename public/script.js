@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (event.abstract) {
               const abstractDiv = document.createElement('div');
               abstractDiv.className = 'event-abstract';
-              abstractDiv.textContent = event.abstract;
+              abstractDiv.textContent = cleanAbstractData(event.abstract);
               eventDiv.appendChild(abstractDiv);
             }
             
@@ -205,6 +205,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     return parts.join(' ');
   }
+
+  // Abstract/overview data can either be very long, or have some funky formatting that we will remove
+
+  function cleanAbstractData(abstract) {
+    // truncate data if it is over x characters. Some people write a lot in this abstract field
+    let characterLimit = 700;
+    if (abstract.length > characterLimit) {
+      abstract = abstract.substring(0, characterLimit) + '...';
+    }
+
+    // remove all # symbols
+    abstract = abstract.replace(/#/g, '');
+
+    return abstract
+  }
+
 
   function renderLegend(tracks, containerId) {
     const container = document.getElementById(containerId);
