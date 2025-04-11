@@ -51,11 +51,16 @@ h2 {
 }
 
 .room-name {
-  padding: 10px;
+  padding: 18px;
   text-align: center;
-  font-weight: bold;
-  border-radius: 5px 5px 0 0;
+  font-weight: normal;
+  border-radius: 3px;
   margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.room-capacity {
+  font-size: 1rem;
 }
 
 .event {
@@ -149,8 +154,8 @@ h2 {
 }
 
 .legend-color {
-  width: 16px;
-  height: 16px;
+  width: 38px;
+  height: 10px;
   border-radius: 3px;
   margin-right: 6px;
   border: 1px solid #ccc;

@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', function() {
       const roomsContainer = document.createElement('div');
       roomsContainer.className = 'rooms-container';
       
-      // Add rooms for this day
+      // Add rooms for this day. Each one will be a column
       if (day.rooms) {
-        Object.keys(day.rooms).forEach(roomName => {
+        Object.keys(day.rooms).forEach( (roomName, idx) => {
           const roomEvents = day.rooms[roomName];
           
           // Create room container
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
           // Add room name
           const roomNameDiv = document.createElement('div');
           roomNameDiv.className = 'room-name';
-          roomNameDiv.textContent = roomName;
+          roomNameDiv.innerHTML = `${roomName} <span class="room-capacity">(${data.schedule.conference.rooms[idx].capacity} person capacity)</span>`;
           roomNameDiv.style.backgroundColor = primaryColor;
           roomNameDiv.style.color = 'white';
           roomDiv.appendChild(roomNameDiv);
@@ -196,6 +196,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // duratio for a talk is like 1:30, or 0:45
   function formatDuration(durationString) {
     const [hours, minutes] = durationString.split(':').map(Number);
     const parts = [];
@@ -207,7 +208,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Abstract/overview data can either be very long, or have some funky formatting that we will remove
-
   function cleanAbstractData(abstract) {
     // truncate data if it is over x characters. Some people write a lot in this abstract field
     let characterLimit = 700;
