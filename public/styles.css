@@ -1,0 +1,157 @@
+.jaro-font {
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  background: #ebebeb;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 5rem;
+  margin-top: 0;
+}
+
+h2 {
+  border-bottom: 2px solid #478CBF;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.date-info {
+  text-align: center;
+  font-size: 1.7em;
+  margin-bottom: 16px;
+}
+
+.day-container {
+  margin-bottom: 40px;
+}
+
+.rooms-container {
+  display: flex;
+  gap: 20px;
+}
+
+.room {
+  flex: 1;
+  min-width: 0;
+}
+
+.room-name {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 15px;
+}
+
+.event {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 19px;
+  margin-bottom: 15px;
+  position: relative;
+  background: white;
+  box-shadow: 3px 3px 5px #a39e9e;
+}
+
+.event-time {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.event-title {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.event-type {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  margin-right: 1rem;
+  display: inline-flex;
+}
+
+.event-presenter {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  display: inline-flex;
+}
+
+.event-abstract {
+  font-size: 0.85em;
+  margin-top: 8px;
+  border-top: 1px dotted #ddd;
+  padding-top: 8px;
+}
+
+.track-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  border-radius: 0 4px 4px 0;
+}
+
+.duration {
+  font-size: 0.8em;
+  color: #666;
+}
+
+@media print {
+  body {
+    font-size: 10pt;
+  }
+  
+  .event-abstract {
+    font-size: 8pt;
+  }
+  
+  .event {
+    page-break-inside: avoid;
+  }
+  
+  .day-container {
+    page-break-before: always;
+  }
+  
+  .day-container:first-child {
+    page-break-before: avoid;
+  }
+}
+
+.legend-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin-right: 6px;
+  border: 1px solid #ccc;
+}
